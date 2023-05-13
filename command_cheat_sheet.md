@@ -115,3 +115,94 @@
 - `curl` - Transfer data from or to a server.
   - Example: `curl https://example.com`
 
+## Shortcuts
+
+- `~` : This is a shortcut for the home directory of the current user. For example, if the current user's name is `username`, then `~` would translate to `/home/username/`. If you're running a command as root, `~` would refer to `/root`.
+
+    **Example:**
+    ```bash
+    cd ~  # This will take you to the home directory of the current user.
+    ```
+
+- `.` : This refers to the current directory. It's often used when running scripts or executables located in the current directory.
+
+    **Example:**
+    ```bash
+    ./script.sh  # This will run the script.sh file located in the current directory.
+    ```
+
+- `..` : This refers to the parent directory of the current directory.
+
+    **Example:**
+    ```bash
+    cd ..  # This will take you one directory up from the current directory.
+    ```
+
+- `-` : In the `cd` command, `-` refers to the previous directory.
+
+    **Example:**
+    ```bash
+    cd -  # This will take you to the last directory you were in.
+    ```
+
+- `*` : This is a wildcard character that can represent any number of characters (including zero) in a filename or directory name.
+
+    **Example:**
+    ```bash
+    ls *.txt  # This will list all .txt files in the current directory.
+    ```
+
+- `?` : This is a wildcard character that represents a single character in a filename or directory name.
+
+    **Example:**
+    ```bash
+    ls ?.txt  # This will list all .txt files in the current directory with a single character name (like a.txt, b.txt, etc.).
+    ```
+
+- `{}` : Braces are used to define a set of characters in a filename or directory name.
+
+    **Example:**
+    ```bash
+    ls {file1,file2}.txt  # This will list file1.txt and file2.txt.
+    ```
+
+- `|` : This is the pipe operator, used to use the output of one command as input to another.
+
+    **Example:**
+    ```bash
+    cat file.txt | grep "hello"  # This will search for the string "hello" in file.txt.
+    ```
+
+- `>` : This is the redirection operator, used to redirect the output of a command into a file.
+
+    **Example:**
+    ```bash
+    echo "hello" > file.txt  # This will write the string "hello" into file.txt.
+    ```
+
+- `>>` : This is the appending redirection operator, used to append the output of a command to a file.
+
+    **Example:**
+    ```bash
+    echo "world" >> file.txt  # This will append the string "world" to file.txt.
+    ```
+
+- `&` : When used at the end of a command, it runs the command in the background.
+
+    **Example:**
+    ```bash
+    command &  # This will run "command" in the background.
+    ```
+
+- `&&` : This is used to chain commands together, where the second command runs only if the first command completes successfully.
+
+    **Example:**
+    ```bash
+    cd /home/username && ls  # This will change the directory to /home/username and if successful, will list the contents.
+    ```
+
+- `;` : This is used to chain commands together, where the second command runs regardless of whether the first command completes successfully.
+
+    **Example:**
+    ```bash
+    cd /home/username
