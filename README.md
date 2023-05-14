@@ -14,7 +14,7 @@ One of the first things you need to understand about Linux is its file system st
 
 ### Home Directory
 
-The home directory is where your personal files and configuration files are stored. It is typically represented by "/home/username", where "username" is your actual username. The tilde (~) is a shortcut for the home directory, so if your username is "john", "~" and "/home/john" are the same.
+The home directory is where your personal files and configuration files are stored. It is typically represented by "/home/username", where "username" is your actual username. The tilde (`~`) is a shortcut for the home directory, so if your username is "john", "~" and "/home/john" are the same.
 
 ## Basic Linux Commands
 
